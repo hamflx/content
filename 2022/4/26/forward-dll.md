@@ -66,7 +66,7 @@ pub extern "system" fn GetFileVersionInfoSizeA() -> u32 {
         std::arch::asm!(
             "jmp rax",
             in("rax") RealGetFileVersionInfoSizeA,
-            "options(nostack)
+            options(nostack)
         );
     }
     1

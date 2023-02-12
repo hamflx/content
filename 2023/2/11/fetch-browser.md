@@ -20,19 +20,19 @@
 
 因此，你可能会需要频繁的下载不同版本的 `Chrome` 来做各种兼容性测试，这之前对我来说是个比较麻烦的事，我不喜欢通过第三方网站下载的安装包，通过官方 `Chromium` 给出的方法又太麻烦。
 
-后来无意间看到这个仓库：[google/fetchchromium](https://github.com/google/fetchchromium)，但是这个工具需要提供 `revision`，不能通过版本号下载，然后我就自己搞了一个 [hamflx/fetchbrowser](https://github.com/hamflx/fetchbrowser)，可以通过给定版本号下载特定的 `Chromium` 浏览器。
+后来无意间看到这个仓库：[google/fetchchromium](https://github.com/google/fetchchromium)，但是这个工具需要提供 `revision`，不能通过版本号下载，然后我就自己搞了一个 [hamflx/fetchbrowser](https://github.com/hamflx/fetchbrowser)，可以通过给定版本号下载特定的 `Chromium` 浏览器，另外，也支持下载 `Firefox`。
 
 ## fetchbrowser
 
-仓库地址：<https://github.com/hamflx/fetchbrowser>。
+仓库地址：<https://github.com/hamflx/fetchbrowser>，欢迎 `star` (❁´◡`❁)。
 
-安装方式（截至本文发出，`GitHub` 的 raw file 的缓存都没有更新，所以与仓库中的安装脚本有些许不一样，仓库中的脚本暂时不可用）：
+安装方式：
 
 ```powershell
-irm https://raw.githubusercontent.com/hamflx/fetchbrowser/825412e10b9e317ce891ce0eec16bf2590e3eba6/install.ps1 | iex
+irm https://raw.githubusercontent.com/hamflx/fetchbrowser/master/install.ps1 | iex
 ```
 
-下载 `Chromium 98`
+下载 `Chromium 98`：
 
 ```powershell
 fb 98
@@ -40,14 +40,16 @@ fb 98
 
 **注意：在特定平台第一次下载 `Chromium` 会比较慢，因为会联机查找版本信息，后续会使用缓存的数据。**
 
-下载 `Chromium 109.0.5414.120`
+下载 `Chromium 109.0.5414.120`：
 
 ```powershell
 fb 109.0.5414.120
 ```
 
-下载 `Firefox 98`
+下载 `Firefox 98`：
 
 ```powershell
 fb --firefox 98
 ```
+
+对 `Firefox` 的支持可能会有问题，因为 `Firefox` 官方只提供了安装包的安装形式，这里是下载了官方的安装包后解压实现的。

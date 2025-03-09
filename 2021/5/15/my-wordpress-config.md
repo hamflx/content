@@ -1,3 +1,8 @@
+---
+title: 又一个 WordPress 博客的初始配置
+date: 2021-05-15
+---
+
 # 又一个 WordPress 博客的初始配置
 
 站点结构：`nginx` => `WordPress`
@@ -111,5 +116,5 @@ add_action("phpmailer_init", "h_mail_smtp");
 ## 参考资料
 
 - [自己动手实现 WordPress 的邮件通知功能](https://leonax.net/p/6391/implement-wordpress-email-notification-myself/)
-- [WordPress中各种邮件内容及标题的自定义](https://www.jerryzone.cn/diy-wp-email-content/)
-- [完美解决wordpress邮件链接无效的问题](https://www.cnblogs.com/kenshinobiy/p/7441781.html)
+- [WordPress 中各种邮件内容及标题的自定义](https://www.jerryzone.cn/diy-wp-email-content/)
+- [完美解决 wordpress 邮件链接无效的问题](https://www.cnblogs.com/kenshinobiy/p/7441781.html)

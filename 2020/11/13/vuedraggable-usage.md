@@ -1,3 +1,8 @@
+---
+title: `vuedraggable` 使用问题记录
+date: 2020-11-13
+---
+
 # `vuedraggable` 使用问题记录
 
 - 本文引用的 `Sortable.js` 源码 `commit id` 为：`1dff5e1`

@@ -1,3 +1,8 @@
+---
+title: 前端通过 ffmpeg 库播放视频
+date: 2021-10-14
+---
+
 # 前端通过 ffmpeg 库播放视频
 
 仓库地址：<https://github.com/hamflx/ffmpeg-fe>
@@ -254,11 +259,11 @@ ffmpeg -i test.mkv -c:v libx265 -preset ultrafast -c:a copy -movflags faststart 
 
 ## 参考资料
 
-- [C/C++面向WebAssembly编程](https://github.com/3dgen/cppwasm-book)
+- [C/C++ 面向 WebAssembly 编程](https://github.com/3dgen/cppwasm-book)
 - [avformat_open_input fails only with a custom IO context](https://stackoverflow.com/questions/41734219/avformat-open-input-fails-only-with-a-custom-io-context)
-- [avformat_open_input返回-1094995529 “Invalid data found when processing input“](https://blog.csdn.net/wowotou_heihei/article/details/115622917)
-- [FFmpeg内存IO模式(内存区作输入或输出)](https://www.cnblogs.com/leisure_chn/p/10318145.html)
+- [avformat_open_input 返回 -1094995529“Invalid data found when processing input“](https://blog.csdn.net/wowotou_heihei/article/details/115622917)
+- [FFmpeg 内存 IO 模式 (内存区作输入或输出)](https://www.cnblogs.com/leisure_chn/p/10318145.html)
 - [ffmpeg 的编程教程](https://github.com/lightfish-zhang/mpegUtil)
-- [一步步进行ffmpeg的C语言音视频编程](https://segmentfault.com/a/1190000017980746)
+- [一步步进行 ffmpeg 的 C 语言音视频编程](https://segmentfault.com/a/1190000017980746)
 - [ffmpeg AVIOContext 自定义 IO 及 seek](https://segmentfault.com/a/1190000021378256)
-- [FFmpeg进行音频的解码和播放](https://cloud.tencent.com/developer/article/1669163)
+- [FFmpeg 进行音频的解码和播放](https://cloud.tencent.com/developer/article/1669163)

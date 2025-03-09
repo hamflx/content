@@ -1,3 +1,8 @@
+---
+title: 使用 Rust 编写转发 DLL
+date: 2022-04-26
+---
+
 # 使用 Rust 编写转发 DLL
 
 本文实现一个转发 DLL：`version.dll` 转发到系统的 `version.dll` 上。另外要注意，本文代码仅供参考，不一定可以运行，需要做一定的修改，或直接查看最终实现：<https://github.com/hamflx/forward-dll>。

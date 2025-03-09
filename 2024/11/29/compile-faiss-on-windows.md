@@ -1,3 +1,8 @@
+---
+title: 在 Windows 上编译 faiss
+date: 2024-11-29
+---
+
 # 在 Windows 上编译 faiss
 
 前置要求：
@@ -35,7 +40,7 @@ path add 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\C
 # $env:Path = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;$env:Path"
 
 cmake -B build -DFAISS_ENABLE_C_API=ON -DBLA_VENDOR=Intel10_64_dyn '-DMKL_LIBRARIES=C:\Program Files (x86)\Intel\oneAPI\mkl\2025.0\lib' -DFAISS_ENABLE_PYTHON=OFF -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF .
-cmake --build build --config Release 
+cmake --build build --config Release -j 16
 ```
 
 安装到一个目录，如 `C:\sdk\faiss`：

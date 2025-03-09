@@ -1,3 +1,8 @@
+---
+title: 玩饥荒联机版日志
+date: 2019-03-22
+---
+
 # 玩饥荒联机版日志
 
 ## 搭建独立服务器
@@ -33,7 +38,7 @@
 
 Tip：有些系统（如：`CentOS 7`）不提供 `libcurl-gnutls.so.4` 那么将其链接到 `libcurl.so.4` 即可。
 
-多世界并存：若要在一台服务器上运行多个饥荒服务器，则需要修改存档的 `Master` 及 `Caves` 目录中 `server.ini` 的 `server_port` 使其各不相同，且在 `10998-11018` 范围内。且每个存档的 `cluster.ini` 中 `master_port` 应唯一，该端口用于存档的地面与洞穴之间通信。 饥荒服务器在启动时同样会监听 `127.0.0.1:10888/UDP` 端口和一个非固定 `TCP` 端口，可能这些也需要修改。初步猜测该端口可能用于存档的地面与洞穴之间通信，多个存档应修改该端口。
+多世界并存：若要在一台服务器上运行多个饥荒服务器，则需要修改存档的 `Master` 及 `Caves` 目录中 `server.ini` 的 `server_port` 使其各不相同，且在 `10998-11018` 范围内。且每个存档的 `cluster.ini` 中 `master_port` 应唯一，该端口用于存档的地面与洞穴之间通信。饥荒服务器在启动时同样会监听 `127.0.0.1:10888/UDP` 端口和一个非固定 `TCP` 端口，可能这些也需要修改。初步猜测该端口可能用于存档的地面与洞穴之间通信，多个存档应修改该端口。
 
 跨服务器世界：即将洞穴服务器与地面服务器分离，将存档的 `cluster.ini` 中 `master_ip` 与 `master_port` 配置为地面服务器的 IP 地址和端口即可。
 
@@ -129,8 +134,8 @@ steamcmd.sh +login anonymous +download_depot 343050 343052 6994825278996354537 +
 [SteamCMD – Valve Developer Community](https://developer.valvesoftware.com/wiki/SteamCMD)
 [饥荒联机版独立服务器搭建踩坑记录 – Blessing Studio](https://blessing.studio/deploy-dont-starve-together-dedicated-server/)
 [【社区指南翻译】如何下载旧版的游戏 – 平台研讨 – SteamCN 蒸汽动力 – 驱动正版游戏的引擎！](https://steamcn.com/t258082-1-1)
-[通过depot下载得到旧版游戏及一个衍生应用 – 平台研讨 – SteamCN 蒸汽动力 – 驱动正版游戏的引擎！](https://steamcn.com/t258079-1-1)
-[Guide: How to download older versions of a game on Steam：Steam](https://www.reddit.com/r/Steam/comments/611h5e/guide_how_to_download_older_versions_of_a_game_on/)
+[通过 depot 下载得到旧版游戏及一个衍生应用 – 平台研讨 – SteamCN 蒸汽动力 – 驱动正版游戏的引擎！](https://steamcn.com/t258079-1-1)
+[Guide: How to download older versions of a game on Steam: Steam](https://www.reddit.com/r/Steam/comments/611h5e/guide_how_to_download_older_versions_of_a_game_on/)
 [饥荒联机独立服务器搭建教程（三）：配置篇 | 天天の記事簿](http://blog.ttionya.com/article-1235.html)
 [Create UDP to TCP bridge with socat/netcat to relay control commands for vlc media-player – Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/267118/create-udp-to-tcp-bridge-with-socat-netcat-to-relay-control-commands-for-vlc-med)
 
@@ -138,7 +143,7 @@ steamcmd.sh +login anonymous +download_depot 343050 343052 6994825278996354537 +
 
 对游戏端口 `UDP 10998/10999` 进行转发，可实现在外网进入内网的游戏服务器。其简单 `python2` 脚本如下：
 
-agent_v3.py：
+agent_v3.py:
 
 ```python
 #!/usr/bin/env python2
@@ -248,7 +253,7 @@ if __name__ == '__main__':
 
 脚本依赖 docopt。
 
-forward_v1.py：
+forward_v1.py:
 
 ```python
 #!/usr/bin/python2

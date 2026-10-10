@@ -82,7 +82,7 @@ function h_override_mail_from_name($email) {
 }
 
 function h_override_mail_from($email) {
-    return 'service@hamflx.cn';
+    return 'author@example.com';
 }
 
 function h_mail_filter($args) {
@@ -96,7 +96,7 @@ function h_mail_smtp($phpmailer) {
     $phpmailer->Port = 465;
     $phpmailer->SMTPSecure = "ssl";
     $phpmailer->Host = "smtp.qq.com";
-    $phpmailer->Username = "service@hamflx.cn";
+    $phpmailer->Username = "author@example.com";
     $phpmailer->Password = "Your Token";
 }
 
